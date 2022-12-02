@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/main.css" />
+    <title>Jordan's Portfolio | Thanks</title>
+    <script>
+        function ld() {
+
+            var countDownDate = new Date().setSeconds(new Date().getSeconds() + 10);
+
+            var x = setInterval(function () {
+
+                var now = new Date().getTime();
+
+                var distance = countDownDate - now;
+
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("redir-countdown").innerText = "You will be redirected to the home page in: " + seconds + " seconds";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    open("./index.html", "_self");
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+
+<body onload="ld()">
+    <h1>Thank you for Contacting me, I will get back to you as soon as possible</h1>
+    <h2 id="redir-countdown"></h2>
+</body>
+
+</html>

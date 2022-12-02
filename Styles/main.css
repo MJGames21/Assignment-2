@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: zillah_modern;
+    src: url(Zillah_Modern.ttf);
+}
+
+@font-face {
+    font-family: top_modern;
+    src: url(Top_Modern.ttf);
+}
+
+form {
+    float: left;
+}
+
+body {
+    background-color: #8D99AE;
+    color: #EDF2F4;
+    font-family: top_modern;
+    text-align: center;
+    font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: zillah_modern;
+    color: #264653;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+b {
+    color: #394F49;
+}
+
+input,
+textarea {
+    background-color: #394F49;
+}
